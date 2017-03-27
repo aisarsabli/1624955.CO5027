@@ -1,0 +1,170 @@
+﻿body {
+       
+}
+
+.align
+{
+    width:1000px;
+    margin: auto;
+}
+
+#weblogo{
+    position: center;
+    background-color:black;
+}
+
+#navigation {
+    font-family:AlexsHand;
+    font-size: 20px;
+    color:white;
+    text-align: center;    
+    background-color: black;
+    border: 1px solid black;   
+    z-index: 3;
+    position: relative;
+}
+
+#navigation :hover {
+    color:blue;
+}
+
+#navigation ul{ 
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+#navigation ul li{ 
+    /*Navigation Home, Product, About US & Contact*/
+    display: inline-block;
+    margin-right: 20px;
+    
+
+}
+
+#navigation ul li:hover { 
+    /*Navigation Home, Product, About US & Contact (HOVER)*/
+    background-color:black;
+    border : 1px solid black;
+        
+}
+
+#navigation ul li:hover ul  { 
+    /*Navigation Inside Product*/
+    display:block;
+    background-color:black;
+    text-decoration: none;    
+    padding-right:43px;    
+    
+}
+
+#navigation ul li a { 
+    padding-left: 40px;
+    padding-right: 40px;
+    display : block;
+    text-decoration : none;
+    color:white;
+
+}
+
+#navigation ul ul{ 
+    display:none;
+    position: absolute;
+    background-color: white;
+    border: 3px solid black; 
+    width: 100px;
+    padding: 0px 0px 0px 0px;
+
+}
+
+#navigation ul ul li{ 
+    display:block; 
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+#navigation ul ul li :hover{     
+    text-decoration: none;
+    color : blue;
+    
+}
+
+#navigation ul ul li a{ 
+    display:block;     
+    text-decoration: none;
+    color:white;
+    background-color: black;
+}
+
+#slider{
+    overflow: hidden;
+    height: 350px;
+    width:90%;
+    }
+
+#slider figure div{
+    width:20%;
+    float: left;
+}
+
+#slider figure img{
+    width: 15%;    
+    float: left;
+}
+
+#slider figure {
+    position: relative;
+    width: 223%;    
+    margin: 0 ;
+    left : 0;
+    animation: 20s slide infinite;
+}
+
+@keyframes slide{
+    0%{
+        left:0%;
+    }
+    10%{
+        left:0%;
+    }
+    20%{
+        left:-100%;
+    }    
+    30% {
+        left: -200%;
+    }
+    40%{
+        left:-300%;
+    }
+    50% {
+        left: -400%;
+    }
+    60%{
+        left:-300%;
+    }    
+    70%{
+        left:-200%;
+    }
+    
+    80%{
+        left:-100%;
+    }    
+    100%{
+        left:0%;
+    }
+}
+
+h1{
+    display: inline-block;
+    font-family:BrendensHand;
+    font-size: 20px;
+}
+
+p{
+    font-size: 17px;
+    list-style-type: none;
+    text-decoration: none;
+    z-index: 3;
+    font-family:RickysHand;
+}

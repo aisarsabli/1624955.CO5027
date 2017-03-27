@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HomeSite.Master.cs" Inherits="_1624955_WebDevelopment.HomePage.HomeSite" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Capsul</title>
+    <link rel="stylesheet" href="../Style/StyleSheet.css" type="text/css" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+       
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <div class="align">
+    <form id="form1" runat="server">
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">             
+        </asp:ContentPlaceHolder>   
+
+        <div id="weblogo"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp; <img src="../images/CapSul1.png" style="height: 135px"/></div>
+
+        <div id="navigation">            
+            <ul>
+  				<li><a href="Default.aspx">Home</a></li>
+                <li><a href="#">Product</a>
+                	<ul>
+                    	<li><a href="#">Fitteds</a></li>
+                        <li><a href="#">Snapbacks</a></li>
+                        <li><a href="#">Strapbacks</a></li>
+                        <li><a href="#">Others</a></li>
+                    </ul>
+                </li>
+                <li><a href="AboutUs.aspx">About Us</a></li>                
+                <li><a href="ContactUs.aspx">Contact Us</a></li>
+            </ul>            
+        </div>  
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+        </asp:ContentPlaceHolder> 
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+        </asp:ContentPlaceHolder> 
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder4" runat="server">
+        </asp:ContentPlaceHolder> 
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder5" runat="server">
+        </asp:ContentPlaceHolder> 
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder6" runat="server">
+
+        </asp:ContentPlaceHolder> 
+    </form>  
+        </div>  
+</body>
+</html>
