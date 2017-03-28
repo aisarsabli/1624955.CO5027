@@ -28,7 +28,7 @@
     <h2>IMAGES!</h2>
 </asp:Content>
 <asp:Content ID="Content6" ContentPlaceHolderID="ContentPlaceHolder5" runat="server">
-    <h1>Inforamtion         <br/> <p><a href="#">About Us   </a></p></h1>
-<h1>Customer Service    <br/> <p><a href="#">Contact Us </a></p></h1>
+    <h1>Inforamtion         <br/> <p><a href="#">About Us   </a></p>
+    <h1>Customer Service    <br/> <p><a href="#">Contact Us </a></p></h1>
 </asp:Content>
  
