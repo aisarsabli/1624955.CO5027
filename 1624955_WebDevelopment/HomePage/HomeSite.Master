@@ -52,6 +52,8 @@
 
         <div class="footer">
             <h3>COPYRIGHT 2017, CAPSUL</h3>
+            <a href ="http://validator.w3.org/check?uri=refer">Validation HTML</a>
+            <a href ="http://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
         </div>
 
         </div>  

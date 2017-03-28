@@ -12,29 +12,25 @@
     <p>
         <asp:Label ID="Label1" runat="server" Text="First Name:"></asp:Label>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:TextBox ID="TextBox1" runat="server" OnTextChanged="TextBox1_TextChanged" Width="270px"></asp:TextBox>
+        
     </p>
     <p>
         <asp:Label ID="Label2" runat="server" Text="Last Name:"></asp:Label>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:TextBox ID="TextBox2" runat="server" Width="272px"></asp:TextBox>
-    </p>
+        </p>
     <p>
         <asp:Label ID="Label3" runat="server" Text="Email Address:"></asp:Label>
         &nbsp;&nbsp;
-        <asp:TextBox ID="TextBox3" runat="server" Width="276px"></asp:TextBox>
-    </p>
+        </p>
     <p>
         <asp:Label ID="Label4" runat="server" Text="Subject:"></asp:Label>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:TextBox ID="TextBox4" runat="server" Width="280px"></asp:TextBox>
-    </p>
+        </p>
     <p>
         <asp:Label ID="Label5" runat="server" Text="Message:"></asp:Label>
     </p>
     <p>
-        <asp:TextBox ID="TextBox5" runat="server" Height="142px" OnTextChanged="TextBox5_TextChanged" Width="419px"></asp:TextBox>
-    </p>
+        &nbsp;</p>
     <p>
         &nbsp;</p>
     <p>
