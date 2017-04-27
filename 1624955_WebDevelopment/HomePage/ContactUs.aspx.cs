@@ -274,7 +274,6 @@ namespace _1624955_WebDevelopment.HomePage
                string.IsNullOrWhiteSpace(txtMessage.Text))
             {
                 txtLiteralFN.Text = "Please fill in first name";
-                //txtLiteralLN.Text = "Please fill in last name";
                 txtLiteralE.Text = "Please enter your email here";
                 txtLiteralS.Text = "Give a subject for your message";
                 txtLiteralM.Text = "Type what you want to tell us here.";
@@ -288,7 +287,6 @@ namespace _1624955_WebDevelopment.HomePage
             {
                 txtLiteralFN.Text = "Please fill in first name";
                 txtLiteralLN.Text = "Please fill in last name";
-                //txtLiteralE.Text = "Please enter your email here";
                 txtLiteralS.Text = "Give a subject for your message";
                 txtLiteralM.Text = "Type what you want to tell us here.";
             }
@@ -301,8 +299,7 @@ namespace _1624955_WebDevelopment.HomePage
             {
                 txtLiteralFN.Text = "Please fill in first name";
                 txtLiteralLN.Text = "Please fill in last name";
-                txtLiteralE.Text = "Please enter your email here";
-                //txtLiteralS.Text = "Give a subject for your message";
+                txtLiteralE.Text = "Please enter your email here";                
                 txtLiteralM.Text = "Type what you want to tell us here.";
             }
 
@@ -316,7 +313,6 @@ namespace _1624955_WebDevelopment.HomePage
                 txtLiteralLN.Text = "Please fill in last name";
                 txtLiteralE.Text = "Please enter your email here";
                 txtLiteralS.Text = "Give a subject for your message";
-                //txtLiteralM.Text = "Type what you want to tell us here.";
             }
 
             /*else if (string.IsNullOrWhiteSpace(txtFName.Text) ||
