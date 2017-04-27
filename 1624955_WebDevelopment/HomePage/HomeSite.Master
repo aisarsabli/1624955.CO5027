@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HomeSite.Master.cs" Inherits="_1624955_WebDevelopment.HomePage.HomeSite" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="HomeSite.Master.cs" Inherits="_1624955_WebDevelopment.HomePage.HomeSite" %>
 
 <!DOCTYPE html>
 
@@ -19,12 +19,12 @@
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">             
         </asp:ContentPlaceHolder>   
 
-        <div id="weblogo"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="../images/CapSul1.png" style="height: 135px"/></div>
+        <div id="weblogo"> <img src="../images/CapSul1.png" alt= "image" style="height: 135px" /></div>
 
         <div id="navigation">            
             <ul>
   				<li><a href="Default.aspx">Home</a></li>
-                <li><a href="#">Product</a>
+                <li><a href="Product.aspx">Product</a>
                 	<ul>
                     	<li><a href="#">Fitteds</a></li>
                         <li><a href="#">Snapbacks</a></li>
@@ -50,10 +50,20 @@
 
     </form>  
 
+        <div class="footer1">
+        <h1>Inforamtion         <br/> <a href="AboutUs.aspx">About Us   </a></h1>
+        <h1>Customer Service    <br/> <a href="ContactUs.aspx">Contact Us </a></h1>
+        </div>
+
         <div class="footer">
-            <h3>COPYRIGHT 2017, CAPSUL</h3>
-            <a href ="http://validator.w3.org/check?uri=refer">Validation HTML</a>
+            <h3>COPYRIGHT CAPSUL @ 2017</h3>            
+        </div>
+
+        <div class="footer2">            
+            <a href ="http://validator.w3.org/check?uri=referer">Validation HTML</a>
             <a href ="http://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
+            <a href ="#">Admin</a>
+            <a href ="Register.aspx">Account</a>
         </div>
 
         </div>  
