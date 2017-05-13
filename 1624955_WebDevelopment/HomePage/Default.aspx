@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
-    <h2>Welcome To The CapSul!!!</h2>
+    <div id="headertitle"><h2>Welcome To The CapSul!!!</h2></div>    
     <h2>BANNER!!</h2>   
     <div id="banner">
         <img src="../images/banner1.png" alt= "image"/> 

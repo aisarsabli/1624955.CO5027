@@ -1,56 +1,53 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="HomeSite.Master" AutoEventWireup="true" CodeBehind="ContactUs.aspx.cs" Inherits="_1624955_WebDevelopment.HomePage.ContactUs" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <p>
-    sql</p>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">    
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder3" runat="server">
 
     <div class ="contact">
-        <p>&nbsp;</p>
         <p>
-            <asp:Label ID="Label1" runat="server" Text="First Name:" Font-Size="Small"></asp:Label>
-            &nbsp;<asp:Literal ID="txtLiteralFN" runat="server"></asp:Literal>
+            <asp:Label ID="Label1" runat="server" Text="First Name:"></asp:Label>
+            <asp:Literal ID="txtLiteralFN" runat="server"></asp:Literal>
         </p>
         <p>   
             <asp:TextBox ID="txtFName" runat="server" Width="373px" Font-Names="Adobe Devanagari"></asp:TextBox>        
         </p>
         <p>
-            <asp:Label ID="Label2" runat="server" Text="Last Name:" Font-Size="Small"></asp:Label>
-            &nbsp;<asp:Literal ID="txtLiteralLN" runat="server"></asp:Literal>
+            <asp:Label ID="Label2" runat="server" Text="Last Name:"></asp:Label>
+            <asp:Literal ID="txtLiteralLN" runat="server"></asp:Literal>
         </p>
         <p>
             <asp:TextBox ID="txtLName" runat="server" Width="373px" Font-Names="Adobe Devanagari"></asp:TextBox>
         </p>
         <p>
-            <asp:Label ID="Label3" runat="server" Text="Email Address:" Font-Size="Small"></asp:Label>
-            &nbsp;<asp:Literal ID="txtLiteralE" runat="server"></asp:Literal>
-        &nbsp;</p>
+            <asp:Label ID="Label3" runat="server" Text="Email Address:"></asp:Label>
+            <asp:Literal ID="txtLiteralE" runat="server"></asp:Literal>
+        </p>
         <p>
             <asp:TextBox ID="txtEmail" runat="server" Width="373px" Font-Names="Adobe Devanagari"></asp:TextBox>
-        &nbsp;&nbsp;</p>
+        </p>
         <p>
             <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtEmail" ErrorMessage="Invalid email form" ValidationExpression="^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*\s*$"></asp:RegularExpressionValidator>
         </p>
         <p>
-            <asp:Label ID="Label4" runat="server" Text="Subject:" Font-Size="Small"></asp:Label>
-            &nbsp;<asp:Literal ID="txtLiteralS" runat="server"></asp:Literal>
+            <asp:Label ID="Label4" runat="server" Text="Subject:" ></asp:Label>
+            <asp:Literal ID="txtLiteralS" runat="server"></asp:Literal>
         </p>
         <p>
             <asp:TextBox ID="txtSubject" runat="server" Width="373px" Font-Names="Adobe Devanagari"></asp:TextBox>
         </p>
         <p>
-            <asp:Label ID="Label5" runat="server" Text="Message:" Font-Size="Small"></asp:Label>
-            &nbsp;<asp:Literal ID="txtLiteralM" runat="server"></asp:Literal>
+            <asp:Label ID="Label5" runat="server" Text="Message:" ></asp:Label>
+            <asp:Literal ID="txtLiteralM" runat="server"></asp:Literal>
         </p>
         <p>
             <asp:TextBox ID="txtMessage" runat="server" Height="126px" Width="373px"></asp:TextBox>
         </p>
         <p>
-            <asp:Button ID="Button1" runat="server" Text="Submit" OnClick="Button1_Click" />&nbsp;
+            <asp:Button ID="Button1" runat="server" Text="Submit" OnClick="Button1_Click" />
             <asp:Button ID="Button2" runat="server" Text="Cancel" />
         </p>
         <p>
@@ -58,13 +55,8 @@
         </p>
     </div>
 
-    <div class ="map">
-        <style>
-          #map {
-            width: 100%;
-            height: 400px;        
-          }
-        </style>
+    <div class ="map1">
+        
         <h2>Google Map</h2>
         <div id="map"></div>
         <script>
@@ -85,7 +77,7 @@
         </script>
 
         <h2>Static Map</h2>
-        <img src="../images/Map.png" width="100%" />
+        <img src="../images/Map.png" alt="Map" />
 
       </div>
 

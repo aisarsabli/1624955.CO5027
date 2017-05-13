@@ -142,6 +142,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="HomePage\Admin.aspx" />
     <Content Include="HomePage\ContactUs.aspx" />
     <Content Include="HomePage\Default.aspx" />
     <Content Include="HomePage\AboutUs.aspx" />
@@ -198,6 +199,13 @@
   <ItemGroup>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage\Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomePage\Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
     </Compile>
     <Compile Include="HomePage\ContactUs.aspx.cs">
       <DependentUpon>ContactUs.aspx</DependentUpon>

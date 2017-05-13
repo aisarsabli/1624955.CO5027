@@ -43,6 +43,7 @@ namespace _1624955_WebDevelopment.HomePage
         {
             //create a dbcontext that specified the connection string
             var identityDbContext = new IdentityDbContext("IdentityConnectionString");
+            
             // create user store and user manager
             var userStore = new UserStore<IdentityUser>(identityDbContext);
             var manager = new UserManager<IdentityUser>(userStore);
@@ -61,9 +62,9 @@ namespace _1624955_WebDevelopment.HomePage
             {
                 txtliteral2.Text = "An error has occured: " + result.Errors.FirstOrDefault();
             }
-            IdentityRole adminRole = new IdentityRole("admin");
+            IdentityRole adminRole = new IdentityRole("user");
             rolemanager.Create(adminRole);
-            manager.AddToRole(user.Id, "admin");
+            manager.AddToRole(user.Id, "user");
             manager.Update(user);
 
         }

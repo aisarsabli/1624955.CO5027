@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="./HomeSite.Master" AutoEventWireup="true" CodeFile="AboutUs.aspx.cs" Inherits="_1624955_WebDevelopment.HomePage.WebForm2" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="HomeSite.Master" AutoEventWireup="true" CodeFile="AboutUs.aspx.cs" Inherits="_1624955_WebDevelopment.HomePage.WebForm2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -15,7 +15,7 @@
         It promises the best in quality and design, which is why brands like New Era, DC Shoes and Obey have made CapSul, their authorized retailer.​</h4>
 </asp:Content>
 <asp:Content ID="Content5" ContentPlaceHolderID="ContentPlaceHolder4" runat="server">
-    <center><img src="../images/shop.jpg" width="70%" /></center>
+    <img src="../images/shop.jpg" />
 </asp:Content>
 <asp:Content ID="Content6" ContentPlaceHolderID="ContentPlaceHolder5" runat="server">
 </asp:Content>
