@@ -17,7 +17,7 @@ namespace _1624955_WebDevelopment.HomePage
             app.UseCookieAuthentication(new CookieAuthenticationOptions
             {
                 AuthenticationType = DefaultAuthenticationTypes.ApplicationCookie,
-                LoginPath = new PathString("/Default.aspx")
+                LoginPath = new PathString("/Admin.aspx")
             });
         }
     }

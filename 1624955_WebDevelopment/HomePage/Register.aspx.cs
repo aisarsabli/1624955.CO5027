@@ -32,12 +32,7 @@ namespace _1624955_WebDevelopment.HomePage
             {
                 txtliteral.Text = "Invalid username or password.";
             }
-        }
-
-        protected void txtRPassword_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        }       
 
         protected void btnRegister_Click(object sender, EventArgs e)
         {

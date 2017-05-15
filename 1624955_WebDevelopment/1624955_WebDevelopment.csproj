@@ -148,6 +148,7 @@
     <Content Include="HomePage\AboutUs.aspx" />
     <Content Include="HomePage\Product.aspx" />
     <Content Include="HomePage\Register.aspx" />
+    <Content Include="HomePage\UploadPicture.aspx" />
     <Content Include="images\1.jpg" />
     <Content Include="images\10.jpg" />
     <Content Include="images\11.jpg" />
@@ -250,6 +251,13 @@
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
     <Compile Include="HomePage\Startup.cs" />
+    <Compile Include="HomePage\UploadPicture.aspx.cs">
+      <DependentUpon>UploadPicture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomePage\UploadPicture.aspx.designer.cs">
+      <DependentUpon>UploadPicture.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
