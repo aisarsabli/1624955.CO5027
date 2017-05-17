@@ -18,9 +18,9 @@
             <img src="../images/1.jpg" alt= "image"/>
             <img src="../images/2.jpg" alt= "image"/>
             <img src="../images/3.jpg" alt= "image"/>
-            <img src="../images/1.jpg" alt= "image"/>
-            <img src="../images/2.jpg" alt= "image"/>
-            <img src="../images/3.jpg" alt= "image"/>                        
+            <img src="../images/11.jpg" alt= "image"/>
+            <img src="../images/7.jpg" alt= "image"/>
+            <img src="../images/banner1.png" alt= "image"/>                        
         </figure>
     </div>
 </asp:Content>

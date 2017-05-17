@@ -1,11 +1,30 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="./HomeSite.Master" AutoEventWireup="true" CodeFile="Product.aspx.cs" Inherits="_1624955_WebDevelopment.HomePage.Product" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="HomeSite.Master" AutoEventWireup="true" CodeBehind="Product.aspx.cs" Inherits="_1624955_WebDevelopment.HomePage.Product" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+
     <div id="box">
-        <div class="product">
+        <asp:Repeater ID="itemsrpt" runat="server">
+
+        <HeaderTemplate></HeaderTemplate>
+        
+        <ItemTemplate>
+             <div class="item" id="productItems">
+                <img src="../images/<%#Eval("ImgID") %><%#Eval("ImgExtension") %>" alt="<%#Eval("ImgAlternatetext") %>"/>
+                    <div class="text">
+                        <h4><%#Eval("ProdName") %></h4>
+                        <a href="ProductDetail.aspx?id=<%#Eval("ProdID") %>" title="Description">Description</a>
+                    </div>            
+                </div>
+         </ItemTemplate>
+       
+        <FooterTemplate></FooterTemplate>        
+        </asp:Repeater>
+     </div> 
+
+        <!--<div class="product">
             <div class="pimage">
                 <img src="../images/1.jpg" />
             </div>  
@@ -33,9 +52,9 @@
                 <asp:Button ID="Button2" runat="server" Height="40px" Text="ADD TO CART" Width="143px" Font-Names="ArchiesHand" />
             </div>
 
-        </div>     
+        </div>    --> 
               
-    </div>    
+       
                       
     
         

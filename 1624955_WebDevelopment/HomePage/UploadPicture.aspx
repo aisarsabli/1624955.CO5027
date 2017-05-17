@@ -4,12 +4,16 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
-Sign Up<br /><br />
+    <br />
                 <asp:Label ID="Label3" runat="server" Text="Upload Image:"></asp:Label><br />
                 <asp:FileUpload ID="FileUpload1" runat="server" /><br />
                 <asp:Label ID="Label1" runat="server" Text="Alternate text:"></asp:Label><br />
-                <asp:TextBox ID="txtAlternateText" runat="server" Width="254px"></asp:TextBox><br />
-                <asp:Button ID="btnConfirm" runat="server" Text="Cofirm" />
+                <asp:TextBox ID="txtAlternateText" runat="server" Width="254px"></asp:TextBox>&nbsp;<asp:Button ID="btnShow" runat="server" Text="View Picture" OnClick="btnShow_Click" />
+    <asp:Image ID="Image1" runat="server" />
+    <br />
+                <asp:Button ID="btnConfirm" runat="server" Text="Confirm" OnClick="btnConfirm_Click" />
+                <br />
+                <asp:Literal ID="litResult" runat="server"></asp:Literal><br />
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder3" runat="server">
     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="ImgID" DataSourceID="SqlDataSource1" Width="998px">
@@ -53,6 +57,10 @@ Sign Up<br /><br />
             <asp:Parameter Name="original_ImgAlternatetext" Type="String" />
         </UpdateParameters>
     </asp:SqlDataSource>
+    
+    <br />
+    <asp:Button ID="btnRefresh" runat="server" Text="Refresh" Width="110px" OnClick="btnRefresh_Click" />
+    
 </asp:Content>
 <asp:Content ID="Content5" ContentPlaceHolderID="ContentPlaceHolder4" runat="server">
 </asp:Content>

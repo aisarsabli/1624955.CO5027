@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="db_1624955_co5027_asgModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Image">
+          <Key>
+            <PropertyRef Name="ImgID" />
+          </Key>
+          <Property Name="ImgID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ImgName" Type="varchar" MaxLength="50" />
+          <Property Name="ImgWidth" Type="int" />
+          <Property Name="ImgHeight" Type="int" />
+          <Property Name="ImgExtension" Type="varchar" MaxLength="50" />
+          <Property Name="ImgAlternatetext" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="ProdID" />
+          </Key>
+          <Property Name="ProdID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ProdName" Type="varchar" MaxLength="50" />
+          <Property Name="ProdQuantity" Type="varchar" MaxLength="50" />
+          <Property Name="ProdPrice" Type="int" />
+          <Property Name="PriceDetail" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityContainer Name="db_1624955_co5027_asgModelStoreContainer">
+          <EntitySet Name="Image" EntityType="Self.Image" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="db_1624955_co5027_asgModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="ProdID" />
+          </Key>
+          <Property Name="ProdID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ProdName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ProdQuantity" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ProdPrice" Type="Int32" />
+          <Property Name="PriceDetail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="db_1624955_co5027_asgEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Products" EntityType="Self.Product" />
+          <EntitySet Name="Images" EntityType="db_1624955_co5027_asgModel.Image" />
+        </EntityContainer>
+        <EntityType Name="Image">
+          <Key>
+            <PropertyRef Name="ImgID" />
+          </Key>
+          <Property Name="ImgID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ImgName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ImgWidth" Type="Int32" />
+          <Property Name="ImgHeight" Type="Int32" />
+          <Property Name="ImgExtension" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ImgAlternatetext" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="db_1624955_co5027_asgModelStoreContainer" CdmEntityContainer="db_1624955_co5027_asgEntities">
+          <EntitySetMapping Name="Products">
+            <EntityTypeMapping TypeName="db_1624955_co5027_asgModel.Product">
+              <MappingFragment StoreEntitySet="Product">
+                <ScalarProperty Name="ProdID" ColumnName="ProdID" />
+                <ScalarProperty Name="ProdName" ColumnName="ProdName" />
+                <ScalarProperty Name="ProdQuantity" ColumnName="ProdQuantity" />
+                <ScalarProperty Name="ProdPrice" ColumnName="ProdPrice" />
+                <ScalarProperty Name="PriceDetail" ColumnName="PriceDetail" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Images">
+            <EntityTypeMapping TypeName="db_1624955_co5027_asgModel.Image">
+              <MappingFragment StoreEntitySet="Image">
+                <ScalarProperty Name="ImgAlternatetext" ColumnName="ImgAlternatetext" />
+                <ScalarProperty Name="ImgExtension" ColumnName="ImgExtension" />
+                <ScalarProperty Name="ImgHeight" ColumnName="ImgHeight" />
+                <ScalarProperty Name="ImgWidth" ColumnName="ImgWidth" />
+                <ScalarProperty Name="ImgName" ColumnName="ImgName" />
+                <ScalarProperty Name="ImgID" ColumnName="ImgID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -52,6 +52,7 @@ namespace _1624955_WebDevelopment.HomePage
             {
                 //todo: Either authenticate the user (log them in) or redirect them to the 1 origin page to log in for themselves
                 txtliteral2.Text = "Register Success !";
+                
             }
             else
             {
@@ -61,7 +62,6 @@ namespace _1624955_WebDevelopment.HomePage
             rolemanager.Create(adminRole);
             manager.AddToRole(user.Id, "user");
             manager.Update(user);
-
         }
 
         private void LogUserIn(UserManager<IdentityUser> usermanager, IdentityUser user)

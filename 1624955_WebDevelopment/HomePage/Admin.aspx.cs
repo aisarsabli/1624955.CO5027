@@ -13,5 +13,11 @@ namespace _1624955_WebDevelopment.HomePage
         {
 
         }
+
+        protected void btnRefresh_Click(object sender, EventArgs e)
+        {
+            GridView1.DataBind();
+            txtMsg.Text = "";
+        }
     }
 }
